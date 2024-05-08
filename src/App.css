@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: start;
+  color: rgb(240, 248, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* justify-content: space-between; */
+  margin: 150px 0px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+#name{
+  font-size: 100px;
+  font-weight: 900;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.app-profile{
+  margin: 0px 100px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(155, 140, 155, 0.5); /* Neon purple */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-text {
+  margin-top: 10px;
+  color: #666;
+}
+
+
+@media (max-width: 500px) {
+  .App{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  #name {
+    font-size: 40px;
   }
+  #profile{
+    font-size: 0.5rem;
+  }
+  .card{
+    height: 150px;
+    width: 150px;
+  }
+  .card img{
+    height: 150px;
+    width: 150px;
+  }
+
 }
