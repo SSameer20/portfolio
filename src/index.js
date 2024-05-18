@@ -17,7 +17,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>  
-    
       <Routes>
       <Route path="/" element={<App />}/>
       <Route path="/about" element={<About />}/>
@@ -25,7 +24,6 @@ root.render(
       <Route path="/achievements" element={<Achievements />}/>
       <Route path="/project" element={<Project />}/>
       <Route path="/contact" element={<Contact />}/>
-
     </Routes>
     <Navigation />
     </BrowserRouter>
