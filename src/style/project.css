@@ -1,0 +1,71 @@
+
+#title{
+    font-size: 2em;
+    font-weight: 700;
+    color: #ff6666;
+}
+.projects{
+    margin: 0px 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.project{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    max-width: 70vw;
+    max-height: 50vh;  
+}
+
+.project:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    max-width: 70vw;
+    max-height: 50vh; 
+}
+
+.project-card{
+    max-width: 30vw;
+    max-height: 30vh;
+    box-shadow: 0px 0px 10px 0px rgb(35, 35, 35);
+}
+
+.project-card img{
+    max-width: 30vw;
+    max-height: 30vh;
+    
+}
+
+.project-details{
+    max-width: 30vw;
+    max-height: 30vh;
+}
+
+.project-title{
+    font-size: large;
+    color: white;
+}
+
+.project-description{
+    font-size:medium;
+    color: rgba(255, 255, 255, 0.599);
+}
+
+
+.repo-btn{
+    margin: 50px 0px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.repo-btn:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: transparent;
+    border: solid 0.1rem white;
+    transition: 0.5s;
+}

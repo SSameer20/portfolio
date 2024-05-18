@@ -9,21 +9,25 @@ import About from './components/About';
 import Achievements from './components/Achievements';
 import Education from './components/Education';
 import Project from './components/Project';
+import Contact from './components/Contact';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <Navigation />
+    <BrowserRouter>  
+    
       <Routes>
       <Route path="/" element={<App />}/>
       <Route path="/about" element={<About />}/>
       <Route path="/education" element={<Education />}/>
       <Route path="/achievements" element={<Achievements />}/>
       <Route path="/project" element={<Project />}/>
+      <Route path="/contact" element={<Contact />}/>
 
     </Routes>
+    <Navigation />
     </BrowserRouter>
   </React.StrictMode>
 );

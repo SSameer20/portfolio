@@ -1,6 +1,6 @@
 .navigation{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     max-width: 100%;
     align-items: center;
@@ -11,6 +11,7 @@ margin: 0 0;
 ul{
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
@@ -21,26 +22,16 @@ li > *{
     color: rgba(240, 248, 255, 0.438);
 }
 
-@media (max-width : 500px) {
-    .navigation{
-        position: relative;
-        z-index: 10;
-        /* justify-content: end; */
-        /* align-items: end; */
-        max-width: 500px;
-        margin: 20px 50px;
-    }
-    ul{
-        
-        flex-direction: column;
-        justify-content:end;
-        text-align: start;
-        background-color: rgba(19, 19, 19, 0.526);
-        padding: 10px;
-        
-    }
-    ul >*{
-        color: red;
-    }
-    
+
+.nav-icon{
+    background-color: rgba(23, 49, 93,1);
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+.nav-icon:hover{
+    background-color: rgb(19, 68, 136);
+    transition: 0.5s;
+    color: black;
 }
