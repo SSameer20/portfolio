@@ -9,18 +9,17 @@ import { FaAward, FaBriefcase } from "react-icons/fa";
 
 
 export default function Navigation() {
-  
 
   return (
     <nav className='navigation' style={{position : 'fixed', right : '10px',top : '25%'}}>
       <ul>
-        <li >
+        <li className='nav-icon'>
           <Link to="/"><IoMdHome 
           color='white'
           fontSize='xx-large'
-          className='nav-icon'
           style={{ transition: 'color 0.8s', cursor: 'pointer' }}
           /></Link>
+          <span >Home</span>
         </li>
 
         <li >

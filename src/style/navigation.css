@@ -27,8 +27,23 @@ li > *{
     background-color: rgba(23, 49, 93,1);
     padding: 10px;
     border: none;
-    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    /* color: white; */
+    border-radius: 30px;
 }
+
+
+.nav-icon span{
+    color: white;
+    display: none;
+}
+
+
+
+
 
 .nav-icon:hover{
     background-color: rgb(19, 68, 136);
