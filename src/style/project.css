@@ -28,12 +28,16 @@
 .project-card{
     max-width: 30vw;
     max-height: 30vh;
-    box-shadow: 0px 0px 10px 0px rgb(35, 35, 35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .project-card img{
     max-width: 30vw;
     max-height: 30vh;
+    box-shadow: 0px 0px 10px 0px rgb(35, 35, 35);
     
 }
 
@@ -54,18 +58,21 @@
 
 
 .repo-btn{
-    margin: 50px 0px;
-    padding: 10px;
+    /* margin: 50px 0px; */
+    padding: 5px 10px;
     text-decoration: none;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: transparent;
+    border: solid 0.1rem white;
     border-radius: 20px;
+    margin: 50px 0;
 }
 
 .repo-btn:hover{
     transform: scale(1.2);
     color: white;
-    background-color: transparent;
+    color: black;
+    background-color: white;
     border: solid 0.1rem white;
     transition: 0.5s;
 }

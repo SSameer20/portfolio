@@ -26,9 +26,11 @@ function App() {
               sequence={[
                 'I am a Software Developer',
                 1000,
+                'I am a Backend Developer',
+                1000,
                 'I aspire to be a Cloud Engineer',
                 1000,
-                'I make Cloud Solutions on aws.',
+                'I make Cloud Solutions on AWS',
                 1000,
               ]}
               wrapper="span"
@@ -43,7 +45,7 @@ function App() {
 
           </div>
           <div>
-            <a href="https://drive.google.com/file/d/1kElCfqU2spss89h7Xod3JcWFeQFcszB6/view?usp=sharing" target="_blank" className='resume-btn'
+            <a href="https://drive.google.com/file/d/1w6YcEIVSxNB2-n4YTVVtPmJemvOn2eou/view?usp=sharing" target="_blank" className='resume-btn'
               style={{ textDecoration: 'none', color: 'inherit', border: "1px solid white", borderRadius: '20px' }}
              >
               View Resume <span> <FaDownload /></span>

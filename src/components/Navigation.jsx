@@ -4,6 +4,7 @@ import "../style/navigation.css";
 import { IoMdHome, IoMdPerson, IoMdContact } from "react-icons/io";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { FaBook } from "react-icons/fa6";
+import { TiContacts } from "react-icons/ti";
 import { FaAward, FaBriefcase } from "react-icons/fa";
 
 
@@ -23,14 +24,16 @@ export default function Navigation() {
         </li>
 
         <li >
-          <Link to="/about">
-            <IoMdPerson
+          <Link to="/project">
+            <FaBriefcase
               color='white'
               fontSize='xx-large'
               className='nav-icon'
               style={{ transition: 'color 0.8s', cursor: 'pointer' }}
-               /></Link>
+             /></Link>
         </li>
+
+       
 
         <li >
           <Link to="/education">
@@ -51,20 +54,21 @@ export default function Navigation() {
               style={{ transition: 'color 0.8s', cursor: 'pointer' }}
               /></Link>
         </li>
-
         <li >
-          <Link to="/project">
-            <FaBriefcase
+          <Link to="/about">
+            <IoMdPerson
               color='white'
               fontSize='xx-large'
               className='nav-icon'
               style={{ transition: 'color 0.8s', cursor: 'pointer' }}
-             /></Link>
+               /></Link>
         </li>
+
+        
 
         <li >
           <Link to="/contact">
-            <IoMdContact
+          <TiContacts
               color='white'
               fontSize='xx-large'
               className='nav-icon'
