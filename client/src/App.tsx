@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import AppLoader from "./components/AppLoader";
-import Skill from "./components/Skills";
+// import Skill from "./components/Skills";
 
 const HeroSection = lazy(() => import("./components/Hero"));
 
