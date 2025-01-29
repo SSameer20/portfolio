@@ -1,5 +1,4 @@
 import { createRoot } from "react-dom/client";
-// import { ParallaxProvider } from "react-scroll-parallax";
 import App from "./App.tsx";
 import "./index.css";
 

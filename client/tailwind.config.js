@@ -4,6 +4,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: "360px",
+        md: "640px",
+        lg: "1024px",
+      },
+      fontFamily: {
+        poppins: ['"Poppins"', "serif"],
+      },
       animation: {
         "spin-slow": "spin 1s linear infinite",
         "spin-fast": "spin 0.4s linear infinite",
