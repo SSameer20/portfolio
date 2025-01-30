@@ -32,7 +32,7 @@ interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
   repeat?: number;
 }
 
-export function Marquee({
+export function MarqueeDemo({
   className,
   reverse = false,
   pauseOnHover = false,
@@ -50,7 +50,7 @@ export function Marquee({
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className,
+        className
       )}
     >
       {Array(repeat)

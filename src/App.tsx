@@ -12,7 +12,7 @@ export default function App() {
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-gray-500"
       >
-        <HeroSection className="" />
+        <HeroSection />
         <Skill className="" />
       </div>
     </Suspense>
