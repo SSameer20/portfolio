@@ -2,7 +2,7 @@ import { Marquee } from "./Marquee";
 
 export default function Skill({ className }: { className?: string }) {
   return (
-    <div className={`${className} h-[100vh] w-[100%] grid bg-black`}>
+    <div className={`${className} w-full grid bg-black`}>
       <Marquee />
     </div>
   );
