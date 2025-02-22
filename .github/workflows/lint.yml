@@ -1,13 +1,18 @@
 name: Lint Test
 on: [push]
+
 jobs:
   lint_check:
     runs-on: ubuntu-latest
     steps:
-      - name: build project
-      - uses: actions/checkout@v4
-      - run: npm install
-      - run: npm run build
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: lint check
-      - run: npm run lint
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Run lint check
+        run: npm run lint
