@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import AppLoader from "./components/AppLoader";
-import Skill from "./components/Skills";
+// import Skill from "./components/Skills";
 import Education from "./components/Education";
 
 const HeroSection = lazy(() => import("./components/Hero"));
@@ -15,7 +15,7 @@ export default function App() {
   snap-y snap-mandatory scroll-smooth"
       >
         <HeroSection className="snap-start" />
-        <Skill className="h-[50vh] snap-start" />
+        {/* <Skill className="h-[50vh] snap-start" /> */}
         <Education className="h-[100vh] bg-black snap-start" />
       </div>
     </Suspense>

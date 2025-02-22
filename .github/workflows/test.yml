@@ -1,0 +1,14 @@
+name: Test Pipeline
+on: [push]
+jobs:
+  Exploring all github actions
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Welcome ${{github.actor}} welcoe to the project"
+      - run: echo "This is test pipeline" 
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "The ${{github.repository}}"
+        run: |
+              ls ${{github.workspace}}
+      - run: echo "This jobs status is ${{job.status}}"

@@ -7,11 +7,11 @@ export default function Home({ className }: { className?: string }) {
   return (
     <Suspense fallback={<AppLoader />}>
       <div
-        className={`${className} relative w-full h-screen flex flex-col justify-center items-center overflow-hidden`}
+        className={`${className} relative w-full h-screen flex flex-col justify-center items-center overflow-hidden bg-black`}
       >
         <Robo className="z-[5]" />
         {/* background light blare div */}
-        <motion.div
+        {/* <motion.div
           initial={{
             opacity: 0,
             translateX: -50,
@@ -22,7 +22,8 @@ export default function Home({ className }: { className?: string }) {
           }}
           transition={{ delay: 2, duration: 1 }}
           className="absolute w-[0.1px] h-[0.1px] bg-transparent shadow-[0px_0_500px_100px_#344CB7] z-[1]"
-        />
+        /> */}
+        <motion.div className="absolute ml-[10vw] mt-[10vh] w-[0px] h-[200vh] bg-transparent shadow-[0px_0_800px_20px_#A1E3F9] z-[1] rotate-[-45deg]" />
         {/* Inner shadow div */}
         <motion.div
           className="absolute lg:top-[30vh] lg:left-[5vw] sm:top-[5vh] sm:left-[5vw] flex flex-col font-poppins z-10"
